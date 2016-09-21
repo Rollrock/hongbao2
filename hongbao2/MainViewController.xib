@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOq-zI-srG">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hongbaoIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="idh-DJ-EFv"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红包雨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itI-ZU-Ezj">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="ENu-93-IEd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="itI-ZU-Ezj" firstAttribute="centerX" secondItem="yOq-zI-srG" secondAttribute="centerX" id="3Is-9a-Fo0"/>
+                        <constraint firstAttribute="bottom" secondItem="itI-ZU-Ezj" secondAttribute="bottom" constant="28" id="DbR-LI-PXd"/>
+                        <constraint firstItem="idh-DJ-EFv" firstAttribute="top" secondItem="yOq-zI-srG" secondAttribute="top" id="QID-IG-ISx"/>
+                        <constraint firstAttribute="width" constant="140" id="RAd-4X-oSZ"/>
+                        <constraint firstAttribute="bottom" secondItem="idh-DJ-EFv" secondAttribute="bottom" id="W7h-jK-mP4"/>
+                        <constraint firstAttribute="trailing" secondItem="idh-DJ-EFv" secondAttribute="trailing" id="iNb-rM-DfR"/>
+                        <constraint firstAttribute="height" constant="140" id="qgF-B3-irb"/>
+                        <constraint firstItem="idh-DJ-EFv" firstAttribute="leading" secondItem="yOq-zI-srG" secondAttribute="leading" id="zn8-er-aQh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AgC-we-mJK">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hongbaoIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="8IN-cD-5bV"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定时红包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bU-aM-xYi">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Hgy-l0-QaW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="38s-Ls-eac"/>
+                        <constraint firstAttribute="trailing" secondItem="8IN-cD-5bV" secondAttribute="trailing" id="4NV-7O-QpD"/>
+                        <constraint firstItem="8IN-cD-5bV" firstAttribute="top" secondItem="AgC-we-mJK" secondAttribute="top" id="7xd-Jx-MMf"/>
+                        <constraint firstItem="8bU-aM-xYi" firstAttribute="centerX" secondItem="AgC-we-mJK" secondAttribute="centerX" id="GIM-aR-n20"/>
+                        <constraint firstAttribute="bottom" secondItem="8IN-cD-5bV" secondAttribute="bottom" id="PbK-8l-EL4"/>
+                        <constraint firstAttribute="bottom" secondItem="8bU-aM-xYi" secondAttribute="bottom" constant="28" id="TLa-3z-UoR"/>
+                        <constraint firstAttribute="height" constant="140" id="dyH-BS-iUP"/>
+                        <constraint firstItem="8IN-cD-5bV" firstAttribute="leading" secondItem="AgC-we-mJK" secondAttribute="leading" id="u13-JN-UeU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view tag="103" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDa-Cz-sVa">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hongbaoIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cgi-PU-O0z"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的红包" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgu-nl-W86">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="66G-4F-B1X"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Cgi-PU-O0z" secondAttribute="trailing" id="Gbi-4e-ZsO"/>
+                        <constraint firstItem="fgu-nl-W86" firstAttribute="centerX" secondItem="iDa-Cz-sVa" secondAttribute="centerX" id="Gd3-n7-NVN"/>
+                        <constraint firstAttribute="height" constant="140" id="RCZ-zq-PrO"/>
+                        <constraint firstAttribute="bottom" secondItem="Cgi-PU-O0z" secondAttribute="bottom" id="WwB-91-Jyr"/>
+                        <constraint firstItem="Cgi-PU-O0z" firstAttribute="top" secondItem="iDa-Cz-sVa" secondAttribute="top" id="XXO-JP-qjO"/>
+                        <constraint firstAttribute="bottom" secondItem="fgu-nl-W86" secondAttribute="bottom" constant="28" id="aZZ-E8-shc"/>
+                        <constraint firstAttribute="width" constant="140" id="bZT-R3-5OI"/>
+                        <constraint firstItem="Cgi-PU-O0z" firstAttribute="leading" secondItem="iDa-Cz-sVa" secondAttribute="leading" id="dpq-bK-IeS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.49019607840000001" green="0.49019607840000001" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iDa-Cz-sVa" secondAttribute="trailing" constant="10" id="AnF-Ce-ghy"/>
+                <constraint firstItem="AgC-we-mJK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="VhA-j0-CRr"/>
+                <constraint firstItem="yOq-zI-srG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="ZGm-Ec-azb"/>
+                <constraint firstItem="iDa-Cz-sVa" firstAttribute="top" secondItem="AgC-we-mJK" secondAttribute="bottom" constant="20" id="a09-II-0GW"/>
+                <constraint firstItem="yOq-zI-srG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="c86-QO-db8"/>
+                <constraint firstAttribute="trailing" secondItem="AgC-we-mJK" secondAttribute="trailing" constant="10" id="jcb-Fs-Ubx"/>
+            </constraints>
+            <point key="canvasLocation" x="-78" y="354"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hongbaoIcon.png" width="250" height="250"/>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyViewController">
+            <connections>
+                <outlet property="hongbaoLab" destination="DGZ-bh-Qxl" id="rcj-xq-jpu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myhongbao.png" translatesAutoresizingMaskIntoConstraints="NO" id="PHa-W0-mSc">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="642" id="GuT-bI-D3w"/>
+                        <constraint firstAttribute="width" secondItem="PHa-W0-mSc" secondAttribute="height" multiplier="1080:1000" id="eAe-Tx-kFw"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="GuT-bI-D3w"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共收到红包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8f-3T-zqC">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Efb-Xq-oJQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGZ-bh-Qxl">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="UCl-su-ObX"/>
+                        <constraint firstAttribute="width" constant="133" id="fk8-h4-DYU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygr-eE-eMu">
+                    <color key="backgroundColor" red="0.82352941176470584" green="0.31372549019607843" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="gfk-XM-GST"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="提取红包">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="drawClicked" destination="-1" eventType="touchUpInside" id="HkA-cT-M2S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.99215686274509807" green="0.98039215686274506" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ygr-eE-eMu" firstAttribute="top" secondItem="DGZ-bh-Qxl" secondAttribute="bottom" constant="40" id="BVZ-oI-8ab"/>
+                <constraint firstItem="W8f-3T-zqC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DO8-xt-oyl"/>
+                <constraint firstAttribute="trailing" secondItem="ygr-eE-eMu" secondAttribute="trailing" constant="40" id="E0X-Ah-j4T"/>
+                <constraint firstAttribute="trailing" secondItem="PHa-W0-mSc" secondAttribute="trailing" id="JCq-h9-kBa"/>
+                <constraint firstItem="PHa-W0-mSc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="K4P-rP-GNQ"/>
+                <constraint firstItem="DGZ-bh-Qxl" firstAttribute="top" secondItem="W8f-3T-zqC" secondAttribute="bottom" constant="10" id="Kox-Ec-9jv"/>
+                <constraint firstItem="PHa-W0-mSc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="M5a-tN-NyM"/>
+                <constraint firstItem="DGZ-bh-Qxl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NFz-rR-XAg"/>
+                <constraint firstItem="ygr-eE-eMu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="bSU-es-orb"/>
+                <constraint firstItem="W8f-3T-zqC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="qqE-zk-RZo"/>
+            </constraints>
+            <point key="canvasLocation" x="-11" y="140"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="myhongbao.png" width="1080" height="1000"/>
+    </resources>
+</document>

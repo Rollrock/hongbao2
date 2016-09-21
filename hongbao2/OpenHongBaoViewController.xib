@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpenHongBaoViewController">
+            <connections>
+                <outlet property="nameLab" destination="2rm-6B-w2V" id="EAu-3d-hNd"/>
+                <outlet property="openBtn" destination="IIb-oF-oHs" id="1l0-cU-Qhb"/>
+                <outlet property="timeLab" destination="Oup-qs-Z1x" id="1Ha-eg-WRx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ct2-8T-j3J">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OpenHongBaoBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="NX8-uc-uOc"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oup-qs-Z1x">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="161-h4-5Tf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="早饭红包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rm-6B-w2V">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="G7N-Tw-UUc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OU-r1-540">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="2OT-cf-TuA"/>
+                                <constraint firstAttribute="width" constant="30" id="Jqm-PX-0g0"/>
+                            </constraints>
+                            <connections>
+                                <action selector="backClicked" destination="-1" eventType="touchUpInside" id="Vrt-ul-jgX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Oup-qs-Z1x" firstAttribute="centerX" secondItem="Ct2-8T-j3J" secondAttribute="centerX" id="8YN-7p-xW4"/>
+                        <constraint firstAttribute="width" constant="311" id="BiW-Sb-5TK"/>
+                        <constraint firstItem="NX8-uc-uOc" firstAttribute="leading" secondItem="Ct2-8T-j3J" secondAttribute="leading" id="Cbn-4h-Skz"/>
+                        <constraint firstItem="Oup-qs-Z1x" firstAttribute="top" secondItem="2rm-6B-w2V" secondAttribute="bottom" constant="8" id="ZhQ-tk-UsF"/>
+                        <constraint firstItem="4OU-r1-540" firstAttribute="top" secondItem="Ct2-8T-j3J" secondAttribute="top" constant="5" id="fOg-5T-KSm"/>
+                        <constraint firstAttribute="trailing" secondItem="NX8-uc-uOc" secondAttribute="trailing" id="fcv-i4-PgO"/>
+                        <constraint firstItem="2rm-6B-w2V" firstAttribute="top" secondItem="Ct2-8T-j3J" secondAttribute="top" constant="110" id="ijJ-X8-ptS"/>
+                        <constraint firstAttribute="bottom" secondItem="NX8-uc-uOc" secondAttribute="bottom" id="jv7-qL-rci"/>
+                        <constraint firstItem="2rm-6B-w2V" firstAttribute="centerX" secondItem="Ct2-8T-j3J" secondAttribute="centerX" id="lam-aY-WD0"/>
+                        <constraint firstAttribute="height" constant="420" id="s6H-NQ-jlY"/>
+                        <constraint firstItem="4OU-r1-540" firstAttribute="leading" secondItem="Ct2-8T-j3J" secondAttribute="leading" constant="5" id="sur-rM-wjy"/>
+                        <constraint firstItem="NX8-uc-uOc" firstAttribute="top" secondItem="Ct2-8T-j3J" secondAttribute="top" id="yRR-TP-Sho"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-oF-oHs">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="ffp-or-hn6"/>
+                        <constraint firstAttribute="width" constant="80" id="knv-t0-P7u"/>
+                    </constraints>
+                    <connections>
+                        <action selector="openClicked" destination="-1" eventType="touchUpInside" id="Y2Y-PM-bdH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IIb-oF-oHs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2sg-tP-h0f"/>
+                <constraint firstItem="Ct2-8T-j3J" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gS8-Y8-fUo"/>
+                <constraint firstAttribute="bottom" secondItem="IIb-oF-oHs" secondAttribute="bottom" constant="205" id="jJc-tt-PQa"/>
+                <constraint firstItem="Ct2-8T-j3J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x4g-Vn-cYE"/>
+            </constraints>
+            <point key="canvasLocation" x="62.5" y="425.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="OpenHongBaoBG.png" width="622" height="838"/>
+    </resources>
+</document>
